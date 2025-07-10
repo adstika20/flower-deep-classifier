@@ -152,6 +152,13 @@ Berdasarkan confusion matrix, model melakukan 33 kesalahan prediksi: 12 pada kel
    
 ![Kesalahan prediksi](https://github.com/adstika20/flower-deep-classifier/blob/main/assets/Jumlah%20gambar%20yang%20salah%20diprediksi.png)
    
-## Penutup
+## Demo Online
 
+Klik link di bawah untuk mencoba aplikasi klasifikasi bunga secara langsung:
+
+🔗 [Flower Deep Classifier](https://atikansh20-flower-deep-classifier.hf.space/?__theme=light&deep_link=nB7rD9mVOno)
+
+**Contoh Tampilan Aplikasi**
+
+![Demo](https://github.com/adstika20/flower-deep-classifier/blob/main/assets/Hugging%20Face.png)
 
