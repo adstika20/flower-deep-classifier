@@ -31,17 +31,40 @@ flower-deep-classifier/
 
 ```
 
-## Cara Menjalankan Proyek
+## Cara Menjalankan Proyek (Secara Lokal)
 
 
-#### Clone repositori
-``````bash
-git clone https://github.com/adstika20/flower-deep-classifier.git
+#### 1. Clone Repository
+
+Buka terminal atau CMD, lalu ketik:
+
+```bash
+git clone [https://github.com/username/nama-repo.git](https://github.com/adstika20/flower-deep-classifier.git)
 cd flower-deep-classifier
+```
+#### 2. Buat Virtual Environment (Opsional)
+```
+python -m venv venv
+source venv/bin/activate  # untuk Mac/Linux
+venv\Scripts\activate     # untuk Windows
+```
+#### 3. Install Semua Dependensi
+```
 pip install -r requirements.txt
-python app/app.py
-
-``````
+```
+#### 4. 4. Jalankan Aplikasi
+```
+python app.py
+```
+##  Jalankan Online di Hugging Face Spaces (Tanpa Coding)
+1. Masuk ke: https://huggingface.co/spaces
+2. Klik tombol "Create New Space"
+3. Pilih SDK: Gradio, Nama Space: bebas
+4. Upload file berikut:
+   - app.py
+   - model.h5
+   - requirements.txt
+5. Tunggu proses build selesai, aplikasi siap digunakan online.
 
 
 ## Dataset
