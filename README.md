@@ -81,8 +81,30 @@ Silakan kunjungi tautan tersebut untuk:
 
 
 ## Model Deep Learning
-Convolutional Neural Network (CNN)
+Model Convolutional Neural Network (CNN) ini dirancang untuk melakukan klasifikasi gambar bunga dari dua kategori: Dandelion dan Daisy. Tujuan utamanya untuk secara akurat memprediksi jenis bunga dalam sebuah gambar. Algoritma CNN sangat tepat untuk masalah ini karena kemampuannya yang unggul dalam mengekstrasi fitur spasial hierarkis dari gambar.
+Model pada proyek ini akan mengikuti struktur konvensional CNN yang dimulai dengan lapisan konvolusi dan pooling berulang untuk ekstraksi fitur, diikuti oleh lapisan flatten dan fully connected untuk klasifikasi.
+```
+Input Gambar (150x150x3)
+        ↓
+[Blok Konvolusi 1: Conv 3x3 (32 Filters), Batch Norm, ReLU, Max Pooling 2x2]
+        ↓
+[Blok Konvolusi 2: Conv 3x3 (64 Filters), Batch Norm, ReLU, Max Pooling 2x2]
+        ↓
+[Blok Konvolusi 3: Conv 3x3 (128 Filters), Batch Norm, ReLU, Max Pooling 2x2]
+        ↓
+[Flatten Layer]
+        ↓
+[Dropout Layer 0.5]
+        ↓
+[Fully Connected Layer (128 Neurons), ReLU, L2 Regularization]
+        ↓
+[Dropout Layer 0.5]
+        ↓
+[Output Layer (2 Neurons), Softmax]
+        ↓
+Prediksi Kelas (Dandelion/Daisy)
 
+```
 
 ## Hasil dan Analisis
 1. Training Progres
